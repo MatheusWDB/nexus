@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Luckiest+Guy&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Abel&family=Luckiest+Guy&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #ead941;
+  margin: 0px auto 0px auto;
+  text-align: center;
+  font-family: "Abel"; 
+  background: url(../imagens/-_4.jpg);
+}
+
+/*Header*/
+header, main {
+  margin: 0px auto;
+  
+}
+
+.logo{
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  display: inline;
+}
+.preco{
+  position: absolute;
+  right: 5px;
+  top: 11px;
+  display: inline;
+}
+.navegacao{
+  background-color: rgba(255, 136, 0, 0.555);
+  height: 75px;
+  margin-bottom: 28px;
+}
+
+
+
+/*Main*/
+main {
+  margin: 10px auto;
+}
+h1, caption {
+  color: #ffffff;
+  font-family: "Luckiest Guy";
+  text-shadow: 1px 2px 1px #000, -1px 2px 1px #000, 1px 2px 1px #000, -1px 2px 1px #000; 
+  margin: 20px auto;
+}
+.h2 ,.paragrafo {
+    font-family: "ABeeZee";
+    margin:40px;
+}
+a.como-funciona {
+  color: black;
+  font-style: italic;
+}
+a:hover{
+  color: rgba(255, 136, 0);
+}
+.imagem {
+  border: 1px solid;
+  width: 218px;
+  margin: auto;
+}
+.imagem img {
+  width: 100%;
+  height: 100%;
+}
+
+fieldset {
+  display: inline;
+  width: 20%;
+  min-width: 300px;
+  margin: 20px 50px;
+  border: 1px solid;
+ 
+}
+.valor{
+  
+}
+.lanche .imagem {
+  border: 1px solid;
+  margin: auto;
+  padding: 28px 0px;
+}
+input[type="number"]{
+  width: 35px;
+}
+p {
+  margin: 5px auto 0 auto;
+}
+.botao{
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+.botaoEx{
+  margin-bottom: 5px;
+}
+.botao:hover, .botaoEx:hover {
+  cursor: pointer;
+}
+.quantia {
+  margin: auto 10px;
+}
+textarea {
+  height: 5rem;
+  width: 15rem;
+}
+
+#formulario input{
+  margin-top: 5px;
+}
+
+#formulario button{
+  margin-top: 5px;
+}
+body#cardapio{
+  min-height: 1838px;
+}
+div.restaurante{
+  margin: 230px auto auto auto;  
+}
+table#pedido, table#pedido tr{
+  margin: 30px auto;
+  background-color: white;
+  border: 1px solid;
+  max-width: 1000px;
+}
+div.restaurante table#pedido caption {
+  caption-side: top;
+  text-align: center;
+  padding: 0;
+  font-size: 3em;
+}
+
+fieldset h2, fieldset p, fieldset label {
+  font-weight: bold;
+}
+
+h1, h2, p{
+  font-weight: bolder;
+}
+
+p{
+  font-size: 16px;
+}
+
+
+
+
+
+/*Footer*/
+footer {
+  background-color: #cab601;
+  text-align: center;  
+}
+footer .paragrafo {
+  margin: 0;
+}
+
