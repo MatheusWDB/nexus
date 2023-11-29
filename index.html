@@ -26,37 +26,25 @@
         utilizando nossa ferramenta. Experimente agora!
     </p>
     <a href="info.html" class="como-funciona"><p class="paragrafo">Tá, mas como funciona?</p></a>
-    <fieldset class="fieldregister">
-        <p class="paragrafo">Ficou interessado?</p>
-        <form action="" id="formulario">
-          <label for="">Cadastre-se!</label><br>
-          <input type="text" placeholder="Nome" required /><br>
-          <input type="text" placeholder="CNP-J" required /><br>
-          <input type="tel" placeholder="Telefone" required /><br>
-          <input type="text" placeholder="Nome da Empressa" required /><br>
-          <input type="password" placeholder="Senha" required><br>
-          <a href="cardapio.html"><button type="button">Cadastrar</button></a>
-        </form>
-      </fieldset>
-      <br>
-      <fieldset class="fieldregister">
+    
+      <fieldset class="">
         <p class="paragrafo">Já tem uma conta?</p>
-        <form action="" id="formulario">
+        <form action="" id="login" class="formulario">
           <label for="">Faça o login!</label><br>
-          <input type="text" placeholder="CNP-J" required /><br>
-          <input type="password" placeholder="senha" required><br>
-          <a href="cardapio.html"><button type="button" >Entrar</button></a>
+          <input id="login-entrar" type="text" placeholder="CNP-J" value="admin" required /><br>
+          <input id="senha-entrar" type="password" placeholder="senha" value="admin" required><br>
+          <input type="button" value="Entrar" onclick="entrar()">
         </form>
-        
       </fieldset>
   </main>
   
-  <footer>
+  <footer id="footer-index">
     <div>
       <p class="paragrafo">Criado por Nexus</p>
     </div>
   </footer>
   
+  <script src="js/main.js"></script>
 </body>
 
 </html>
