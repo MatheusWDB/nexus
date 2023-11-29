@@ -38,8 +38,6 @@ header, main {
   margin-bottom: 28px;
 }
 
-
-
 /*Main*/
 main {
   margin: 10px auto;
@@ -50,7 +48,7 @@ h1, caption {
   text-shadow: 1px 2px 1px #000, -1px 2px 1px #000, 1px 2px 1px #000, -1px 2px 1px #000; 
   margin: 20px auto;
 }
-.h2 , .paragrafo {
+.h2 ,.paragrafo {
     font-family: "ABeeZee";
     margin:40px;
 }
@@ -58,7 +56,7 @@ a.como-funciona {
   color: black;
   font-style: italic;
 }
-a:hover {
+a:hover{
   color: rgba(255, 136, 0);
 }
 .imagem {
@@ -84,7 +82,7 @@ fieldset {
   margin: auto;
   padding: 28px 0px;
 }
-input[type="number"] {
+input[type="number"]{
   width: 35px;
 }
 p {
@@ -109,20 +107,20 @@ textarea {
   width: 15rem;
 }
 
-#formulario input{
+.formulario input{
   margin-top: 5px;
 }
 
-#formulario button{
+.formulario button{
   margin-top: 5px;
 }
-body#cardapio {
+body#cardapio{
   min-height: 1838px;
 }
-div.restaurante {
+div.restaurante{
   margin: 230px auto auto auto;  
 }
-table#pedido, table#pedido tr {
+table#pedido, table#pedido tr{
   margin: 30px auto;
   background-color: white;
   border: 1px solid;
@@ -148,13 +146,16 @@ p {
 }
 
 
-
 /*Footer*/
 footer {
   background-color: #cab601;
   text-align: center;  
+  width: 100%;
 }
 footer .paragrafo {
   margin: 0;
 }
-
+#footer-index {
+  position: absolute;
+  bottom: 0;
+}
