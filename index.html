@@ -28,17 +28,32 @@
     <a href="info.html" class="como-funciona"><p class="paragrafo">Tá, mas como funciona?</p></a>
     
       <fieldset class="">
+        <p class="paragrafo">Ficou interessado?</p>
+        <form action="" id="cadastro" class="formulario">
+          <label for="">Crie uma conta!</label><br>
+          <input id="login-cadastro" type="text" placeholder="Login" required><br>
+          <input id="senha-cadastro" type="text" placeholder="Senha" value="" required><br>
+          <input id="nome" type="text" placeholder="Nome do estabelecimento" required><br>
+          <input id="email" type="email" placeholder="E-mail" required><br>
+          <input id="cnpj" type="text" placeholder="CNPJ" maxlength="14" pattern="^\d{2}.\d{3}.\d{3}/\d{4}-\d{2}$" required><br>
+          <input type="button" value="Criar" onclick="cadastrar()">
+        </form>
+      </fieldset>
+
+      <br>
+
+      <fieldset class="">
         <p class="paragrafo">Já tem uma conta?</p>
-        <form action="" id="login" class="formulario">
+        <form action="" id="entrar" class="formulario">
           <label for="">Faça o login!</label><br>
-          <input id="login-entrar" type="text" placeholder="CNP-J" value="admin" required /><br>
-          <input id="senha-entrar" type="password" placeholder="senha" value="admin" required><br>
+          <input id="login-entrar" type="text" placeholder="Login" required><br>
+          <input id="senha-entrar" type="password" placeholder="Senha" required><br>
           <input type="button" value="Entrar" onclick="entrar()">
         </form>
       </fieldset>
   </main>
   
-  <footer id="footer-index">
+  <footer>
     <div>
       <p class="paragrafo">Criado por Nexus</p>
     </div>
