@@ -1,20 +1,63 @@
-//Index
+//Indexlogin
 //Variáveis
-var login;
-var senha;
+var login = new Array();
+var valor_login = document.getElementById("login-cadastro");
+var login_entrar;
+var valor_login_entrar = document.getElementById("login-entrar");
+var senha = new Array()
+var valor_senha = document.getElementById("senha-cadastro");
+var senha_entrar;
+var valor_senha_entrar = document.getElementById("senha-entrar");
+var nome = new Array();
+var valor_nome = document.getElementById("nome");
+var email = new Array();
+var valor_email = document.getElementById("email");
+var cnpj = new Array();
+var valor_cnpj = document.getElementById("cnpj");
+var n = 0;
+
+function cadastrar(){
+    if (valor_cnpj.value != "" && valor_email.value != "" && valor_login.value != "" && valor_nome.value != "" && valor_senha.value != ""){
+        login[n] = valor_login.value;
+        senha[n] = valor_senha.value;
+        nome[n] = valor_nome.vlaue;
+        email[n] = valor_email.value;
+        cnpj[n] = valor_cnpj.value;
+        
+        alert("Cadastro bem sucedido.");
+
+        valor_login.value = "";
+        valor_senha.value = "";
+        valor_nome.value = "";
+        valor_email.value = "";
+        valor_cnpj.value = "";
+        n++;
+
+    } else {
+        alert("Preencha todos os campos.")
+    }
+}
 
 function entrar(){
-    elemento = document.getElementById("login-entrar");
-    login = elemento.value;
-    elemento = document.getElementById("senha-entrar");
-    senha = elemento.value;
-    if (login == "admin" && senha == "admin"){
-        window.location.href = "cardapio.html";
-    } else if (login == "" || senha == ""){
+    
+    login_entrar = valor_login_entrar.value;
+    
+    senha_entrar = valor_senha_entrar.value;
+    if (login.length == 0 || senha.length == 0) {
+        alert("Não há contas cadastradas.")
+    } else if (valor_login == "" || valor_senha == ""){
         alert("Preencha os campos de login e senha.")
     } else {
-        alert("Login ou senha incorretos.");
+       for (var i = 0; i < login.length; i++){
+            if (login_entrar == login[i] && senha_entrar == senha[i]){
+                window.location.href = "cardapio.html";
+            } else if (i == login.length && (login_entrar != login[i] || senha_entrar != senha[i])) {
+                alert("Login ou senha incorretos.");
+            }
+        } 
     }
+    
+    
 }
 
 //Cardapio
@@ -136,6 +179,7 @@ function enviar(){
             quantia[i] = 0;
             lanche[i] = "";
         }
+        
         
     } else {
         //Se não for declarado o número da mesa e ele for menor ou igual a '0'' e o lanche for igual a '0', então...
