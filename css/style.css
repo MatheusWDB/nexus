@@ -32,6 +32,11 @@ header, main {
   inset-block-start: 11px;
   display: inline;
 }
+.sair input{
+  position: relative;
+  inset-block-start: 33%;
+  inline-size: 50px;
+}
 .navegacao{
   background-color: rgba(255, 136, 0, 0.555);
   block-size: 75px;
@@ -124,6 +129,7 @@ table#pedido, table#pedido tr{
   margin: 30px auto;
   background-color: white;
   border: 1px solid;
+  inline-size: 80%;
   max-inline-size: 1000px;
 }
 div.restaurante table#pedido caption {
